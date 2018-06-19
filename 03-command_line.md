@@ -20,7 +20,21 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > pwd
+mkdir
+rm -r (or -rf to suppress messages asking if you want to delete every file in the directory)
+touch
+rm
+mv old_name new_name
+ls -a
+cp [optional source] destination
+man <command> : search manual for command's options
+man -k : search manual for commands using keywords
+cat : show data in file
+head: list the fist 10 lines. Helpful for peeking at long files
+echo: print
+nl: number of lines
+
 
 ---
 
@@ -35,7 +49,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls: list files and directories in the current directory
+-a: list all. This includes hidden files
+-l: list files in long formate (shows permissions)
+-lh: long format with reasonable file size (human readable)
+-lah: long format with reasonable file size including hidden files
+-t: sort by time and date (last edit time)
+-Glp: use long format (l), but don't print group names (G), and display directories with a / (p)
 
 ---
 
@@ -43,7 +63,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > -d: display only directories
+-R: displays subdirectories
+-F: displays directories with / (like p), but also flags files with *
+-i: lists the innode for each file
+-1: displays each entry on one line
 
 ---
 
@@ -51,7 +75,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > Xargs allows you to feed a stream of multiple inputs from STDIN into a command. One example would be to feed into the command "find" to find multiple types of files. For example: Xargs -0 find filename. You could then input ".mp4", ".mkv", and however many file types you wanted (although Linux does not necesitate file type endings for names).
 
  
 
